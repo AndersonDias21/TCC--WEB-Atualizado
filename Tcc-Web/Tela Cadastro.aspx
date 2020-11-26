@@ -1,14 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela Cadastro.aspx.cs" Inherits="Tcc_Web.Tela_Cadastro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <title>Cadastro</title>
+        
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ViaCEP Webservice</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 
 </asp:Content>

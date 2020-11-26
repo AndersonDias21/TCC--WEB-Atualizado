@@ -1,20 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela Login.aspx.cs" Inherits="Tcc_Web.Tela_Login" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <meta charset="UTF-8" />
+    
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DP Serviços Financeiros</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-<html>
-
-
-<body>
-
 
     <div class="topnav">
         <a href="Tela Inicial.aspx"><img src="Images/WhatsApp Image 2020-10-18 at 19.39.33.jpeg" /> </a><br />
@@ -66,10 +62,6 @@
             <br />
         </form>
     
-   
+       <script src="script.js"></script>
 
-
-    <script src="script.js"></script>
-</body>
-</html>
 </asp:Content>

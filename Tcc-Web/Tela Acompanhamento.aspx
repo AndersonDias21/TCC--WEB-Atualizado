@@ -1,15 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela Acompanhamento.aspx.cs" Inherits="Tcc_Web.Tela_Acompanhamento" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE html>
-<html>
-<head>
+
     <meta charset="utf-8" />
     <title>DP Financiamentos</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="menu">
         <a href="Tela Usuario.aspx">Home</a>
@@ -36,8 +35,5 @@
     <br /><br />
     <p>Status Financiamento</p>
     <br />
-    
 
-</body>
-</html>
 </asp:Content>

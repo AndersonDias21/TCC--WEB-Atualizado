@@ -1,20 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela Inicial.aspx.cs" Inherits="Tcc_Web.Tela_Inicial" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DP Serviços Financeiros</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
 
-</head>
-<body>
-
-
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="topnav">
 
@@ -138,7 +133,7 @@
             e sem burocracia!<br /><br />
             Cadastre-se e tenha grandes possiblidades de<br />
             realizar seu sonho.<br />
-            <a href="Tela Cadastro.aspx" class="button" type="submit">Cadastrar-se</></a>
+            <a href="Tela Cadastro.aspx" class="button" type="submit">Cadastrar-se</a>
         </p>
     </div>
     <br />
@@ -177,11 +172,5 @@
         <br />
         <br /><br />
     </div>
-
-
-
-
-</body>
-</html>
 
 </asp:Content>

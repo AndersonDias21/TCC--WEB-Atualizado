@@ -57,3 +57,7 @@ D:\Anderson\Teste Novo Projeto\Tcc-Web\Tcc-Web\obj\Debug\Tcc-Web.csproj.CoreComp
 D:\Anderson\Teste Novo Projeto\Tcc-Web\Tcc-Web\obj\Debug\Tcc-Web.csproj.CopyComplete
 D:\Anderson\Teste Novo Projeto\Tcc-Web\Tcc-Web\obj\Debug\Tcc-Web.dll
 D:\Anderson\Teste Novo Projeto\Tcc-Web\Tcc-Web\obj\Debug\Tcc-Web.pdb
+C:\tcc-web2\TCC--WEB-Atualizado\Tcc-Web\obj\Debug\Tcc-Web.csprojAssemblyReference.cache
+C:\tcc-web2\TCC--WEB-Atualizado\Tcc-Web\obj\Debug\Tcc-Web.csproj.CoreCompileInputs.cache
+C:\tcc-web2\TCC--WEB-Atualizado\Tcc-Web\obj\Debug\Tcc-Web.dll
+C:\tcc-web2\TCC--WEB-Atualizado\Tcc-Web\obj\Debug\Tcc-Web.pdb

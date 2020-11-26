@@ -1,15 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela antecipar boleto.aspx.cs" Inherits="Tcc_Web.Tela_antecipar_boleto" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE html>
-<html>
-<head>
+
     <meta charset="utf-8" />
     <title>Antecipar Boleto</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="menu">
         <a href="Tela Usuario.aspx">Home</a>
@@ -34,6 +32,4 @@
     <a href="Tela direcionada a função do boleto.aspx" style="width: 200px; margin: 10px" class="button" type="submit">Voltar</a>
     <button style="width: 200px; margin: 10px" class="button" type="submit">Imprimir Boleto</button><br />
 
-</body>
-</html>
 </asp:Content>
