@@ -28,8 +28,8 @@ namespace Tcc_Web
         protected void btnSimular_Click(object sender, EventArgs e)
         {
 			if (txtRenda.Text == "" || txtValorFinanciamento.Text == "" || txtParcelas.Text == "")
-				Response.Write("Precnha todos os campos requiridos");
-			else
+				Response.Write("Preencha todos os campos requiridos");
+			else 
 			{
 				double valorParcelado, valordoJuros, valorcomJuros, valorTotal;
 				double valorFinanciamento = Convert.ToDouble(txtValorFinanciamento.Text);
@@ -38,7 +38,9 @@ namespace Tcc_Web
 				valordoJuros = valorParcelado * 2 / 100;
 				valorcomJuros = valorParcelado + valordoJuros;
 				valorTotal = valorcomJuros * numerodeParcelas;
-				//ver como aparecer
+				Resultado.Text = "O Valor solicitado " + valorFinanciamento + " Parcelado em " +
+						numerodeParcelas + " será em parcelas " + valorcomJuros + " Que dá um total de " +
+						valorTotal;
 			}
 
 		}

@@ -85,17 +85,18 @@ namespace Tcc_Web
 				cADASTRO.CPFCNPJ = txtCpf.Text;
 				cADASTRO.CELULAR = txtTelefone.Text;
 				cADASTRO.EMAIL = txtEmail.Text;
-				//falta o campo senha
 				db.CADASTROs.InsertOnSubmit(cADASTRO);
 				db.SubmitChanges();
+				//falta o campo senha
 				LOGIN lOGIN = new LOGIN();
 				lOGIN.CADid = cADASTRO.CADid;
+				lOGIN.NOME = txtNome.Text;
 				lOGIN.E_MAIL = txtEmail.Text;
 				lOGIN.SENHA = txtSenha.Text;
 				lOGIN.CPFCNPJ = txtCpf.Text;
 				db.LOGINs.InsertOnSubmit(lOGIN);
 				db.SubmitChanges();
-				ENDERECO eNDERECO = new ENDERECO();
+			    Endereco eNDERECO = new Endereco();
 				eNDERECO.CADid = cADASTRO.CADid;
 				eNDERECO.CEP = txtCep.Text;
 				eNDERECO.RUA = txtEndereco.Text;
@@ -103,9 +104,9 @@ namespace Tcc_Web
 				eNDERECO.CIDADE = txtCidade.Text;
 				//conferir se teem numero no trabalho antigo
 				eNDERECO.UF = txtEstado.Text;
-				db.ENDERECOs.InsertOnSubmit(eNDERECO);
+				db.Enderecos.InsertOnSubmit(eNDERECO);
 				db.SubmitChanges();
-				Response.Write("Registro incluído com sucesso");
+				Response.Write("Registro incluído om sucesso");
 			}
 		}
 	}

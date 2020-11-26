@@ -9,12 +9,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="menu">
-        <a href="Tela do Usuário.html">Home</a>
-        <a href="Tela de simulação.html">Simulação</a>
-        <a href="Tela Financiamento.html">Financiamento</a>
-        <a href="Tela acompanhamento.html">Acompanhamento</a>
-        <a href="Tela direcionada a função do boleto.html">Boleto</a>
-        <a href="Tela de ajuda.html">Ajuda</a>
+        <a href="Tela Usuario.aspx">Home</a>
+        <a href="Tela de Simulação.aspx">Simulação</a>
+        <a href="Tela Financiamento.aspx">Financiamento</a>
+        <a href="Tela Acompanhamento.aspx">Acompanhamento</a>
+        <a href="Tela Boleto.aspx">Boleto</a>
+        <a href="Tela de ajuda.aspx">Ajuda</a>
     </div>
 
     <h1 style="margin-left: 10px">Boleto</h1>

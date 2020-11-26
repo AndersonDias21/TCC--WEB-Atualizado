@@ -55,9 +55,8 @@
             <asp:Button  style="width: 150px" ID="btnLogin" CssClass="button" runat="server" Text="Login" OnClick="btnLogin_Click"  />
 
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <br />
-            <asp:Button ID="Button1" runat="server" PostBackUrl="~/Tela Usuario.aspx" Text="Button" />
+            <asp:Button style="width: 250px; margin-left: 20px" ID="btnOk" PostBackUrl="~/Tela Usuario.aspx" Enabled="false" Visible="false" CssClass="button" runat="server" Text="Ok" />
             <br />
             <br />
         </form>

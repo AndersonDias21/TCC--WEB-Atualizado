@@ -22,44 +22,34 @@
 
      <asp:Label style="margin-left:5px" ID="lblCpf" runat="server" Text="CPF/CNPJ"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" TextMode="Number"  ID="txtCpf" runat="server"></asp:TextBox>
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
 
     <asp:Label style="margin-left:5px" ID="lblRenda" runat="server" Text="Digite sua renda mensal"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" TextMode="Number" ID="txtRenda" runat="server"></asp:TextBox>
-    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
     
     <asp:Label style="margin-left:5px" ID="lblValorFinanciamento" runat="server" Text="Valor do Financiamento"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px"  TextMode="Number"  ID="txtValorFinanciamento" runat="server"></asp:TextBox>
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
 
 
      <asp:Label style="margin-left:5px" ID="lblParcelas" runat="server" Text="Parcelas"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" type="text"  ID="txtParcelas" runat="server"></asp:TextBox>
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
-
-
-    <!-- Não existe no banco
-        <label style="margin-left:5px" for="txtMoeda">Moeda</label>
-    <select style="border: 2px solid #ccc;background-color: white;width: 20%; margin-left:5px; padding: 8px 20px;box-sizing: border-box"
-            id="txtMoeda" name="txtMoeda">
-        <option value="txtMoeda">Real</option>
-        <option value="txtMoeda">Dólar</option>
-        <option value="txtMoeda">Euro</option>
-        <option value="txtMoeda">BitCoin</option>
-    </select>-->
-    <br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+    <asp:Label ID="lblMoeda" runat="server" Text="Moeda"></asp:Label>
+    <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:ListItem Value="real">Real</asp:ListItem>
+        <asp:ListItem Value="dolar">Dólar</asp:ListItem>
+        <asp:ListItem Value="euro">Euro</asp:ListItem>
+        <asp:ListItem Value="bitCoin">BitCoin</asp:ListItem>
+    </asp:DropDownList><br /><br />
+    <a href="https://mercadocotacao.com/dolar-hoje/" id="USD" title="Cotação do Dólar Americano Hoje" name="mercado_cotacao">Dólar Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+    <a href="https://mercadocotacao.com/euro-hoje/" id="EUR" title="Cotação do Euro Hoje" name="mercado_cotacao">Euro Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+    <a href="https://mercadocotacao.com/bitcoin-hoje/" id="BTC" title="Cotação do Bitcoin Hoje" name="mercado_cotacao">Bitcoin</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+    <br /><br />
+    <asp:Label ID="Resultado" runat="server" Text="Resultado aparecerá aqui"></asp:Label><br /><br />
     <asp:Button href="Tela Usuario.aspx" style="width: 200px; margin-left: 20px" CssClass="button" ID="btnVoltar" runat="server" Text="Voltar" />
     <asp:Button style="width: 200px; margin-left: 20px" CssClass="button" ID="btnSolicitar" runat="server" Text="Solicitar" OnClick="btnSolicitar_Click" />
-    <textarea id="txtResultado"></textarea>
-    <label style="margin-left:5px" for="txtJuros">  Juros</label>
-    <input style="margin-left: 5px" type="text" id="txtJuros" name="txtJuros" required /><br />
-    <label style="margin-left:5px" for="txtValorTotal">  Valor da parcela</label>
-    <input style="margin-left: 5px" type="text" id="txtValorTotal" name="txtValorTotal" required /><br />
-
-    <label style="margin-left:5px" for="txtValorParcela">  Valor total</label>
-    <input style="margin-left: 5px" type="text" id="txtValorParcela" name="txtValorParcela" required /><br />
-    <label style="margin-left:5px" for="dateVencimento">Vencimento</label>
-    <input style="margin-left: 5px" type="date" id="dateVencimento" name="dateVencimento" required /><br />
     <br /><br />
 
 </asp:Content>

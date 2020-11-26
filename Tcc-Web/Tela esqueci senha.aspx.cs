@@ -35,7 +35,9 @@ namespace Tcc_Web
                                    c.CPFCNPJ,
                                    c.CELULAR
                                };
-                Response.Write("Ver com ligar com a tela Usuário");
+                Response.Write("Usuário encontrado para acessar clique em Ok para acessar sua conta");
+                btnOk.Enabled = true;
+                btnOk.Visible = true;
             }
         }
     }

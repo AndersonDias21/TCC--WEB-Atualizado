@@ -24,7 +24,7 @@
     <asp:TextBox ID="txtCpf" runat="server" ></asp:TextBox><br />
     <br />
     <asp:Button ID="btnOk" style="width: 200px; margin-left: 20px" CssClass="button" runat="server" Text="Ok" OnClick="btnOk_Click" />
-    <asp:Button href="Tela Usuario.aspx" style="width: 200px; margin-left: 20px" CssClass="button" ID="btnVoltar" runat="server" Text="Voltar" />
+    <asp:Button PostBackUrl="~/Tela Usuario.aspx" style="width: 200px; margin-left: 20px" CssClass="button" ID="btnVoltar" runat="server" Text="Voltar" />
     <br /><br />
     <br /><br />
 

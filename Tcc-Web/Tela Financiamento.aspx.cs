@@ -11,6 +11,22 @@ namespace Tcc_Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+			if (txtRenda.Text == "" || txtValorFinanciamento.Text == "" || txtParcelas.Text == "")
+				Response.Write("Preencha todos os campos requiridos");
+			else if(!(txtRenda.Text == "") && !(txtValorFinanciamento.Text == "") && !(txtParcelas.Text == ""))
+			{
+				double valorParcelado, valordoJuros, valorcomJuros, valorTotal;
+				double valorFinanciamento = Convert.ToDouble(txtValorFinanciamento.Text);
+				int numerodeParcelas = Convert.ToInt32(txtParcelas.Text);
+				valorParcelado = valorFinanciamento / numerodeParcelas;
+				valordoJuros = valorParcelado * 2 / 100;
+				valorcomJuros = valorParcelado + valordoJuros;
+				valorTotal = valorcomJuros * numerodeParcelas;
+				Resultado.Text = "O Valor solicitado " + valorFinanciamento + " Parcelado em " +
+						numerodeParcelas + " será em parcelas " + valorcomJuros + " Que dá um total de " +
+						valorTotal;
+
+			}
 			if (txtCpf.Text == "")
 				mensagemErroCpf.Visible = true;
 			else
@@ -41,7 +57,7 @@ namespace Tcc_Web
 				cONTRATO.CPFCNPJ = txtCpf.Text;
 				cONTRATO.CONTRATO_VALOR = (double)txtValorFinanciamento.TextMode;
 				cONTRATO.CONTRATO_TX_JUROS = 2;
-
+				cONTRATO.CONTRATO_QTDE_PARCELAS =(int)txtParcelas.TextMode;
 				db.CONTRATOs.InsertOnSubmit(cONTRATO);
 				db.SubmitChanges();
 				Response.Write("Financiamento Solicitado com Sucesso");

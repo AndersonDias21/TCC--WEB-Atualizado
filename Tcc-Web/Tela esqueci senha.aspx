@@ -30,17 +30,18 @@
     <form name="verificacao" action="#" method="get">
         <label style="margin-left:5px" for="txtEmail">E-mail </label>
         <asp:TextBox style="margin-left:5px" TextMode="Email" ID="txtEmail" runat="server"></asp:TextBox>
-        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroEmail" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroEmail"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
 
         <label style="margin-left:5px" for="txtCpf">CPF/CNPJ</label>
         <asp:TextBox style="margin-left:5px" TextMode="Number" ID="txtCpf" runat="server"></asp:TextBox>
-        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
 
         <label style="margin-left:5px" for="txtTelefone">Telefone</label>
         <asp:TextBox style="margin-left:5px" TextMode="Number" ID="txtTelefone" runat="server"></asp:TextBox>
-        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroTelefone" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+        <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroTelefone"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
 
         <asp:Button style="width: 250px; margin-left: 20px" ID="btnEntrar" CssClass="button" runat="server" Text="Entrar" OnClick="btnEntrar_Click"  />
+        <asp:Button style="width: 250px; margin-left: 20px" ID="btnOk" PostBackUrl="~/Tela Usuario.aspx" Enabled="false" Visible="false" CssClass="button" runat="server" Text="Ok" />
     </form>
 
 </asp:Content>

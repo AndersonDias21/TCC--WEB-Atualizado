@@ -1,1 +1,77 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 9.375" name="PIM">
+  <DataContextMoniker Name="/PIMDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ff33e9c6-4fa7-4bb8-bd94-dad09190d2dc" absoluteBounds="3.625, 1.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/PIMDataContext/BOLETO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17631469-4b3a-45ab-b91a-ed38074c22b3" absoluteBounds="3.64, 2.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="def235a3-5aa3-449b-bed4-e7ecee3a76d2" absoluteBounds="6.375, 2.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/PIMDataContext/CADASTRO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="446893d2-e200-47e2-8216-ee79c7d17e82" absoluteBounds="6.39, 2.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 3.45755126953125); (5.625 : 3.45755126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PIMDataContext/CADASTRO/CADASTRO_BOLETO" />
+      <nodes>
+        <classShapeMoniker Id="def235a3-5aa3-449b-bed4-e7ecee3a76d2" />
+        <classShapeMoniker Id="ff33e9c6-4fa7-4bb8-bd94-dad09190d2dc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5b86babc-2fcd-4103-8101-63dcf5a15a54" absoluteBounds="1, 1.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/PIMDataContext/LOGIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b954fcba-f813-46da-8665-38e69a017eff" absoluteBounds="1.0150000000000001, 1.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 4.95115397135417); (2 : 4.95115397135417); (2 : 3.59780110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PIMDataContext/CADASTRO/CADASTRO_LOGIN" />
+      <nodes>
+        <classShapeMoniker Id="def235a3-5aa3-449b-bed4-e7ecee3a76d2" />
+        <classShapeMoniker Id="5b86babc-2fcd-4103-8101-63dcf5a15a54" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="496bdc0d-21c7-4eee-981c-095480b0b74d" absoluteBounds="8.75, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PIMDataContext/PAGAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb8a2a4c-890f-4ca7-aa8b-4fa681e2f959" absoluteBounds="8.765, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8b5b3ed-2292-4980-bc47-5c8ea111e14b" absoluteBounds="4.375, 5.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/PIMDataContext/Endereco" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e2dd9b8d-d564-452e-a141-13da001c15bd" absoluteBounds="4.39, 6.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.3750005 : 5.42470540364583); (7.3750005 : 7.02005126953125); (6.375 : 7.02005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PIMDataContext/CADASTRO/CADASTRO_Endereco" />
+      <nodes>
+        <classShapeMoniker Id="def235a3-5aa3-449b-bed4-e7ecee3a76d2" />
+        <classShapeMoniker Id="d8b5b3ed-2292-4980-bc47-5c8ea111e14b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="605c5508-de71-42fe-a521-d6c498912612" absoluteBounds="9.25, 6.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/PIMDataContext/CONTRATO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="238d179e-3927-4714-bca9-676ea9d3a651" absoluteBounds="9.265, 7.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10 : 6.75); (10 : 5.53049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PIMDataContext/CONTRATO/CONTRATO_PAGAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="605c5508-de71-42fe-a521-d6c498912612" />
+        <classShapeMoniker Id="496bdc0d-21c7-4eee-981c-095480b0b74d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.90625275 : 5.42470540364583); (7.90625275 : 8.09017868815104); (9.25 : 8.09017868815104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PIMDataContext/CADASTRO/CADASTRO_CONTRATO" />
+      <nodes>
+        <classShapeMoniker Id="def235a3-5aa3-449b-bed4-e7ecee3a76d2" />
+        <classShapeMoniker Id="605c5508-de71-42fe-a521-d6c498912612" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

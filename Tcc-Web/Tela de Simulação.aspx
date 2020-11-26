@@ -25,23 +25,28 @@
     
     <label style="margin-left: 5px">Digite sua renda mensal</label>
     <asp:TextBox style="margin-left: 5px" TextMode="Number" ID="txtRenda" runat="server"></asp:TextBox>
-    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
+    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
     <label style="margin-left: 5px">Digite o valor do financiamento</label>
     <asp:TextBox style="margin-left: 5px" TextMode="Number" ID="txtValorFinanciamento" runat="server"></asp:TextBox>
-    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
+    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
     <label style="margin-left: 5px">Digite o número de parcelas que deseja realizar o financiamento</label>
     <asp:TextBox style="margin-left: 5px" TextMode="Number" ID="txtParcelas" runat="server"></asp:TextBox>
-    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
+    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
+    
     <asp:Button style="width: 200px; margin: 20px" CssClass="button" ID="btnSimular" runat="server" Text="Simular" OnClick="btnSimular_Click" />
 
     <br />
-    <asp:Label ID="Resultado" runat="server" Text="Label"></asp:Label>
+    <br />
+    <br />
+    <br />
+    <asp:Label ID="Resultado" runat="server" Text="Resultado aparecerá aqui"></asp:Label>
 
     <br />
-    <asp:TextBox style="margin-left: 5px" ID="txtResultada" runat="server" Text="Texto simulando o financiamento..."></asp:TextBox>
+    <br />
+    <br />
     <br />
     <a href="Tela Usuario.aspx" class="button" style="width: 250px; margin-left: 20px" type="submit">Voltar</a>
     <a href="Tela Financiamento.aspx" class="button" style="width: 250px;margin-left: 20px; font-size: 17px " type="submit">Efetuar Financiamento</a>

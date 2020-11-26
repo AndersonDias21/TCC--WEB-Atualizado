@@ -1,1 +1,89 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DpFinanciamentos" Class="PIMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DpFinanciamentos;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DpFinanciamentosConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BOLETOS" Member="BOLETOs">
+    <Type Name="BOLETO">
+      <Column Name="BOLETOid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CAD_NOME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="PGTO_PARCELA_NUM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VALOR" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CADid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DT_PGTO" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_VENCIMENTO" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Association Name="CADASTRO_BOLETO" Member="CADASTRO" ThisKey="CADid" OtherKey="CADid" Type="CADASTRO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CADASTRO" Member="CADASTROs">
+    <Type Name="CADASTRO">
+      <Column Name="CADid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CAD_NOME" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="CAD_FANTASIA" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="rgInscricao" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DTN_Fundacao" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CELULAR" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TEL_COMERCIAL" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FlAtivo" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DsAtivo" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Association Name="CADASTRO_BOLETO" Member="BOLETOs" ThisKey="CADid" OtherKey="CADid" Type="BOLETO" />
+      <Association Name="CADASTRO_LOGIN" Member="LOGINs" ThisKey="CADid" OtherKey="CADid" Type="LOGIN" />
+      <Association Name="CADASTRO_Endereco" Member="Enderecos" ThisKey="CADid" OtherKey="CADid" Type="Endereco" />
+      <Association Name="CADASTRO_CONTRATO" Member="CONTRATOs" ThisKey="CADid" OtherKey="CADid" Type="CONTRATO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOGIN" Member="LOGINs">
+    <Type Name="LOGIN">
+      <Column Name="LOGINid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LOGIN" Member="LOGIN1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CADid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="[E-MAIL]" Member="E_MAIL" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SENHA" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIPOUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CADASTRO_LOGIN" Member="CADASTRO" ThisKey="CADid" OtherKey="CADid" Type="CADASTRO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PAGAMENTO" Member="PAGAMENTOs">
+    <Type Name="PAGAMENTO">
+      <Column Name="PGTOid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CONTRATOid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PGTO_PARCELA_NUM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DATA" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="VALOR" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PAGTO_STATUS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRATO_VENC" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="CONTRATO_PAGAMENTO" Member="CONTRATO" ThisKey="CONTRATOid" OtherKey="CONTRATOid" Type="CONTRATO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Endereco" Member="Enderecos">
+    <Type Name="Endereco">
+      <Column Name="ENDid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CADid" Type="System.Int32" DbType="Int" CanBeNull="false" />
+      <Column Name="RUA" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="NUMERO" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="COMPLEMENTO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CEP" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="BAIRRO" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="CIDADE" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="UF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Association Name="CADASTRO_Endereco" Member="CADASTRO" ThisKey="CADid" OtherKey="CADid" Type="CADASTRO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONTRATO" Member="CONTRATOs">
+    <Type Name="CONTRATO">
+      <Column Name="CONTRATOid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CADid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONTRATO_QTDE_PARCELAS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRATO_VALOR" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRATO_TX_JUROS" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CONTRATO_STATUS" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="CONTRATO_VENC" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Association Name="CONTRATO_PAGAMENTO" Member="PAGAMENTOs" ThisKey="CONTRATOid" OtherKey="CONTRATOid" Type="PAGAMENTO" />
+      <Association Name="CADASTRO_CONTRATO" Member="CADASTRO" ThisKey="CADid" OtherKey="CADid" Type="CADASTRO" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
