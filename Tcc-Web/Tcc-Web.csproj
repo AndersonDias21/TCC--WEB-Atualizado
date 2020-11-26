@@ -73,6 +73,9 @@
     <Content Include="Images\imagens_proejto.jpg" />
     <Content Include="Images\WhatsApp Image 2020-10-18 at 19.14.35.jpeg" />
     <Content Include="Images\WhatsApp Image 2020-10-18 at 19.39.33.jpeg" />
+    <Content Include="Images\WhatsApp Image 2020-11-26 at 17.38.30 %281%29.jpeg" />
+    <Content Include="Images\WhatsApp Image 2020-11-26 at 17.38.30.jpeg" />
+    <Content Include="Images\WhatsApp Image 2020-11-26 at 17.38.31.jpeg" />
     <Content Include="Styles\telasPag.css" />
     <Content Include="Tela Acompanhamento.aspx" />
     <Content Include="Tela antecipar boleto.aspx" />
