@@ -43,12 +43,12 @@
      <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroDtn" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
         <asp:Label style="margin-left: 5px" ID="lblCpf" runat="server" Text="CPF/CNPJ"></asp:Label><br />
-     <asp:TextBox style="margin-left: 5px" type="text" runat="server" ID="txtCpf"></asp:TextBox>
+     <asp:TextBox style="margin-left: 5px" TextMode="Number" runat="server" ID="txtCpf"></asp:TextBox>
      <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
 
        <asp:Label style="margin-left: 5px" ID="lblTelefone" runat="server" Text="Telefone"></asp:Label><br />
-     <asp:TextBox style="margin-left: 5px" type="text" runat="server" ID="txtTelefone"></asp:TextBox>
+     <asp:TextBox style="margin-left: 5px" TextMode="Number" runat="server" ID="txtTelefone"></asp:TextBox>
      <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroTelefone" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
     
 

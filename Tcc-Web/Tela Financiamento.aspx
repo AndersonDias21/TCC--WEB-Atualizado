@@ -22,21 +22,21 @@
 
      <asp:Label style="margin-left:5px" ID="lblCpf" runat="server" Text="CPF/CNPJ"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" TextMode="Number"  ID="txtCpf" runat="server"></asp:TextBox>
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroCpf"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
     <asp:Label style="margin-left:5px" ID="lblRenda" runat="server" Text="Digite sua renda mensal"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" TextMode="Number" ID="txtRenda" runat="server"></asp:TextBox>
-    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+    <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroRenda"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
     
     <asp:Label style="margin-left:5px" ID="lblValorFinanciamento" runat="server" Text="Valor do Financiamento"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px"  TextMode="Number" ID="txtValorFinanciamento" runat="server"></asp:TextBox>
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroValorFinanciamento"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
 
      <asp:Label style="margin-left:5px" ID="lblParcelas" runat="server" Text="Parcelas"></asp:Label><br />
     <asp:TextBox style="margin-left: 5px" TextMode="Number"  ID="txtParcelas" runat="server"></asp:TextBox>
 
-     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">Preencher o campo</asp:TextBox><br />
+     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas"  Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
     <asp:Label ID="lblMoeda" runat="server" Text="Moeda" style="margin-left: 5px" ></asp:Label>
     <asp:DropDownList ID="DropDownList1" runat="server">
         <asp:ListItem Value="real">Real</asp:ListItem>

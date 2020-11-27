@@ -25,10 +25,10 @@
             <ul style="width: 300px; margin-left: 0px">
                 <li><br /></li>
                 <li><br /></li>
-                <li><a href="Tela de boleto.html" style="color: white">Mensalidade</a></li>
-                <li><a href="Tela antecipar boleto.html" style="color: white">Antecipar boleto</a></li>
-                <li><a href="Tela de quitar financiamento.html" style="color: white">Quitar financiamento</a></li>
-                <li><a href="Tela renegociação de boleto.html" style="color: white">Renegociar boleto</a></li>
+                <li><a href="Tela Boleto.aspx" style="color: white">Mensalidade</a></li>
+                <li><a href="Tela antecipar boleto.aspx" style="color: white">Antecipar boleto</a></li>
+                <li><a href="Tela de quitar financiamento.aspx" style="color: white">Quitar financiamento</a></li>
+                <li><a href="Tela renegociação de boleto.aspx" style="color: white">Renegociar boleto</a></li>
             </ul>
         </div>
 

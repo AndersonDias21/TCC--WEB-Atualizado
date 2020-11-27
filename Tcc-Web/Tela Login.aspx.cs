@@ -31,8 +31,7 @@ namespace Tcc_Web
                 String loginCliente = (txtEmail.Text);
                 String senhaCliente = (txtSenha.Text);
                 var login = from l in db.LOGINs
-                            where l.E_MAIL.Equals(loginCliente)
-                            where l.SENHA.Equals(senhaCliente)
+                            where l.E_MAIL.Equals(loginCliente) && l.SENHA.Equals(senhaCliente)
                             select new
                             {
                                 l.E_MAIL,

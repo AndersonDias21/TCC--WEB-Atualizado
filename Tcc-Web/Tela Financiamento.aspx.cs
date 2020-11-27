@@ -11,22 +11,6 @@ namespace Tcc_Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-			if (txtRenda.Text == "" || txtValorFinanciamento.Text == "" || txtParcelas.Text == "")
-				Response.Write("Preencha todos os campos requiridos");
-			else if(!(txtRenda.Text == "") && !(txtValorFinanciamento.Text == "") && !(txtParcelas.Text == ""))
-			{
-				double valorParcelado, valordoJuros, valorcomJuros, valorTotal;
-				double valorFinanciamento = Convert.ToDouble(txtValorFinanciamento.Text);
-				int numerodeParcelas = Convert.ToInt32(txtParcelas.Text);
-				valorParcelado = valorFinanciamento / numerodeParcelas;
-				valordoJuros = valorParcelado * 2 / 100;
-				valorcomJuros = valorParcelado + valordoJuros;
-				valorTotal = valorcomJuros * numerodeParcelas;
-				Resultado.Text = "O valor de financiamento solicitado será de " + valorFinanciamento + " Dividido em " +
-						numerodeParcelas + " parcelas de " + valorcomJuros + " resultando um valor total de financiamento de " +
-						valorTotal;
-
-			}
 			if (txtCpf.Text == "")
 				mensagemErroCpf.Visible = true;
 			else

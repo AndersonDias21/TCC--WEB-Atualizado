@@ -26,9 +26,9 @@ namespace Tcc_Web
                 String cpfCnpj = (txtCpf.Text);
                 String telefone = (txtTelefone.Text);
                 var cadastro = from c in db.CADASTROs
-                               where c.EMAIL.Equals(emailCliente)
-                               where c.CPFCNPJ.Equals(cpfCnpj)
-                               where c.CELULAR.Equals(telefone)
+                               where c.EMAIL.Equals(emailCliente) &&
+                                     c.CPFCNPJ.Equals(cpfCnpj) &&
+                                     c.CELULAR.Equals(telefone)
                                select new
                                {
                                    c.EMAIL,
