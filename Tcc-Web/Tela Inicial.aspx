@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="topnav">
+    <div class="topnav" style="background-image:  url('Images/topnav8.jpg')">
 
         <a href="Tela Inicial.aspx"><img src="Images/WhatsApp Image 2020-10-18 at 19.39.33.jpeg" /> </a><br />
         <br />
@@ -65,9 +65,6 @@
     <br />
     <br />
     <br />
-
-    <br />
-    <br />
     <div class="b2" style="background-image: url('Images/WhatsApp Image 2020-10-18 at 19.14.35.jpeg'); border-radius: 15px;
 ">
         <br />
@@ -91,10 +88,13 @@
             <div class="column">
                 <div class="p" style="color: white">
                     <p>
-                        Já imaginou se tornando o mais novo<br />
-                        milionário? A DP Financiamentos vai<br />
-                        te ajudar nessa! Basta se cadastrar e<br />
-                        vir conhecer mais sobre nossa plataforma.<br />
+                       Nunca foi tão fácil solicitar um<br />
+                       financiamento, sem contar que nossos<br />
+                       clientes tem seus dados protegidos por<br />
+                       blockchain também podendo realizar o<br />
+                       pagamento de suas dívidas através de<br />
+                       bitcoins que torna tudo ainda mais<br />
+                       prático, seguro e 100% on-line.<br />
                     </p>
                 </div>
             </div>

@@ -38,8 +38,8 @@ namespace Tcc_Web
 				valordoJuros = valorParcelado * 2 / 100;
 				valorcomJuros = valorParcelado + valordoJuros;
 				valorTotal = valorcomJuros * numerodeParcelas;
-				Resultado.Text = "O Valor solicitado " + valorFinanciamento + " Parcelado em " +
-						numerodeParcelas + " será em parcelas " + valorcomJuros + " Que dá um total de " +
+				Resultado.Text = "O valor de financiamento solicitado será de " + valorFinanciamento + " Dividido em " +
+						numerodeParcelas + " parcelas de " + valorcomJuros + " resultando um valor total de financiamento de " +
 						valorTotal;
 			}
 

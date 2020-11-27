@@ -20,11 +20,10 @@
     </div>
 
     <h1 style="margin-left:5px">Acompanhamento</h1>   
- <asp:Label ID="lblCpf" runat="server" Text="Cpf/Cnpj"></asp:Label><br />
+ <asp:Label ID="lblCpf" runat="server" Text="CPF/CNPJ"></asp:Label><br />
     <asp:TextBox ID="txtCpf" runat="server" ></asp:TextBox><br />
     <br />
-    <asp:Button ID="btnOk" style="width: 200px; margin-left: 20px" CssClass="button" runat="server" Text="Ok" OnClick="btnOk_Click" />
-    <asp:Button PostBackUrl="~/Tela Usuario.aspx" style="width: 200px; margin-left: 20px" CssClass="button" ID="btnVoltar" runat="server" Text="Voltar" />
+    <asp:Button ID="btnOk" style="width: 200px; margin-left: 20px" CssClass="button" runat="server" Text="Ir" OnClick="btnOk_Click" />
     <br /><br />
     <br /><br />
 
@@ -33,7 +32,7 @@
     <br /><br />
     <asp:GridView ID="gvContrato" runat="server"></asp:GridView>
     <br /><br />
-    <p>Status Financiamento</p>
+    <p style="margin-left: 20px" >Status Financiamento</p>
     <br />
 
 </asp:Content>

@@ -24,15 +24,15 @@
         <br />
         <div class="row">
             <div class="column">
-                    <img src="Images/WhatsApp Image 2020-11-26 at 17.38.30.jpeg" style="width:510px;height:480px;margin-left:100px; border-radius: 10%" />              
+                    <img src="Images/WhatsApp Image 2020-11-26 at 17.38.30.jpeg" style="width:420px;height:380px;margin-left:10px; border-radius: 10%" />              
             </div>
 
             <div class="column">
-                <img src="Images/WhatsApp Image 2020-11-26 at 17.38.31.jpeg" style="width:610px;height:480px;margin-left:4px; border-radius: 10%" />
+                <img src="Images/WhatsApp Image 2020-11-26 at 17.38.31.jpeg" style="width:420px;height:380px;margin-left:4px; border-radius: 10%" />
             </div>
 
             <div class="column">
-                <img src="Images/WhatsApp Image 2020-11-26 at 17.38.30 (1).jpeg" style="width:510px;height:480px;margin-right:100px; border-radius: 10%" />
+                <img src="Images/WhatsApp Image 2020-11-26 at 17.38.30 (1).jpeg" style="width:420px;height:380px;margin-right:0px; border-radius: 10%" />
             </div>
         </div>
         <br />

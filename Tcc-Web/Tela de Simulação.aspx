@@ -1,16 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tela de Simulação.aspx.cs" Inherits="Tcc_Web.Tela_de_Simulação" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE html>
-<html>
-<head>
+
     <meta charset="utf-8" />
     <title>DP Financiamentos</title>
     <link href="styles/telasPag.css" type="text/css" rel="stylesheet" />
-</head>
 
-<body>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="menu">
         <a href="Tela Usuario.aspx">Home</a>
@@ -36,21 +32,18 @@
     <asp:TextBox BorderColor="White" ForeColor="Red" ID="mensagemErroParcelas" Enabled="false" Visible="false" runat="server" Height="16px" Width="314px">*</asp:TextBox><br />
 
     
-    <asp:Button style="width: 200px; margin: 20px" CssClass="button" ID="btnSimular" runat="server" Text="Simular" OnClick="btnSimular_Click" />
+    <asp:Button style="width: 200px; margin-left: 40px" CssClass="button" ID="btnSimular" runat="server" Text="Simular" OnClick="btnSimular_Click" />
 
     <br />
     <br />
     <br />
     <br />
-    <asp:Label ID="Resultado" runat="server" Text="Resultado aparecerá aqui"></asp:Label>
+    <asp:Label  ID="Resultado" runat="server" Text="O resultado da simulação será apresentado aqui" style="margin-left: 5px" ></asp:Label>
 
     <br />
     <br />
     <br />
     <br />
-    <a href="Tela Usuario.aspx" class="button" style="width: 250px; margin-left: 20px" type="submit">Voltar</a>
     <a href="Tela Financiamento.aspx" class="button" style="width: 250px;margin-left: 20px; font-size: 17px " type="submit">Efetuar Financiamento</a>
 
-</body>
-</html>
 </asp:Content>
