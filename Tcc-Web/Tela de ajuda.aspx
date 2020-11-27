@@ -24,11 +24,11 @@
 
     <p class="p" style="margin-left: 5px; color: black">
         Nosso sistema de ajuda se baseia em um atendimento para qualquer tipo
-        de problema de acordo com sua necessidade.
-    </p>
-    <p class="p" style="margin-left: 5px; color: black">Atendimento online das 9 ás 22h.</p>
+        de problema de acordo com sua necessidade.<br />
 
-    <a href="#" class="button" name="Desativar Conta" style="width:200px;margin-left: 20px">Desativar Conta</a>
+    <p class="p" style="margin-left: 5px; color: black">Atendimento online das 9 às 22h.</p>
+
+  
 
     <div class="p">
         <p style="margin-left:1px;color: black">
